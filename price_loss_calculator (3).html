@@ -1,0 +1,73 @@
+```plaintext
+/ (repo root)
+  ├── index.html   # Main calculator (HTML, CSS, JS)
+  ├── README.md    # Project overview, usage, and GitHub Pages hosting guide
+  └── .gitignore   # Git ignore file (optional, for local environment noise)
+```
+
+---
+
+## index.html
+(contains your full calculator code — already ready to host)
+
+---
+
+## README.md
+```markdown
+# Dynamic Price Loss Calculator
+
+A simple HTML/JS-based calculator that simulates the impact of price increases on revenue, considering elasticity, churn, and CAC. It supports saving multiple scenarios for side-by-side comparison.
+
+## Features
+- Dynamic field creation (add/remove variables)
+- Calculates new price, sales volume, churn cost, net revenue, and revenue change
+- Displays revenue change percentage vs baseline
+- Save multiple scenarios for comparison
+- Input validation for required fields
+
+## File Structure
+```
+/ (repo root)
+  ├── index.html   # Main calculator
+  └── README.md    # Documentation and hosting guide
+```
+
+## Hosting on GitHub Pages
+1. Create a new GitHub repository (e.g. `price-loss-calculator`).
+2. Clone the repo locally and copy `index.html` and `README.md` into it.
+3. In your terminal, run:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/<username>/<repo-name>.git
+   git push -u origin main
+   ```
+4. Go to your repo **Settings > Pages**.
+5. Under **Branch**, select `main` and root (`/`). Save.
+6. GitHub Pages will publish your calculator at:
+   ```
+   https://<username>.github.io/<repo-name>/
+   ```
+
+## License
+MIT License – free to use, modify, and share.
+```
+
+---
+
+## .gitignore
+```gitignore
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Node or build directories (if added later)
+node_modules/
+dist/
+```
+
+---
+
+This structure is GitHub-ready: just upload or push these files to your repo, enable Pages, and you’re live.
